@@ -31,7 +31,7 @@ struct MonAMPLisa
 	}
 	void GetPreview(Byte data[], size_t bytes, int id = 0) const
 	{
-		assert(id < sel);
+		//assert(id < sel);
 
 		concurrency::graphics::copy(GetCurrentBest(),
 			concurrency::index<3>(id, 0, 0),
